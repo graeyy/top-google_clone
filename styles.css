@@ -1,0 +1,155 @@
+
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: arial, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        transition: all 0.5 ease;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    header button {
+        padding: 10px;
+    }
+
+    header a {
+        color: black;
+    }
+
+    .topbar-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 15%;
+        margin: 0 10px 0 10px;
+        height: 10vh;
+    }
+
+    #menu-btn {
+        width: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 60vh;
+    }
+
+    .logo-container {
+    }
+
+    .logo-container img {
+        width: 20vw;
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid gray;
+        height: 6vh;
+        width: 40vw;
+    }
+
+    .search-icon {
+        padding: 10px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    #search-svg {
+        fill: gray;
+        width: 20px;
+    }
+
+    .search-input {
+        width: 85%;
+        height: 4vh;
+        padding: 10px;
+        border: 0;
+        font-size: 1em;
+        color: black;
+    }
+
+    .btn-container button {
+        padding: 10px;
+        margin: 10px;
+        
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        background-color: lightgray;
+        padding: 10px;
+    }
+
+    footer p, footer a {
+        
+        color: rgb(49, 49, 49);
+    }
+    
+    .google-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .left {
+        width: 30vw;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .left a {
+        margin: 0 auto;
+    }
+
+    .right {
+        width: 20vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .right a {
+        margin: 0 auto;
+    }
+
+    .attrib {
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid gray;
+        padding: 5px;
+    }
+    @media screen and (max-width: 767px) {
+        /*mobile version*/
+    }
+}

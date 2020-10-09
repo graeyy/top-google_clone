@@ -1,4 +1,6 @@
-
+/*
+    font-family: 'Roboto', sans-serif;
+    */
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     * {
@@ -13,6 +15,7 @@
 
     a {
         text-decoration: none;
+        color: blue;
     }
 
     a:hover {
@@ -27,8 +30,18 @@
         padding: 10px;
     }
 
-    header button {
-        padding: 10px;
+    #btn-login {
+        padding: 10px 15px;
+        color: #f1f1f1;
+        background-color: #1a73e8;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+    }
+
+    #btn-login:hover {
+
     }
 
     header a {
@@ -38,15 +51,39 @@
     .topbar-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
-        width: 15%;
-        margin: 0 10px 0 10px;
-        height: 10vh;
+        width: 50%;
+        padding: 10px;
+        margin: 0 20px 0 10px;
+        height: 8vh;
     }
 
+    .topbar-container div {
+        padding: 10px;
+    }
+
+
+    #menu-btn-container {
+        box-sizing: border-box;
+        width: 30px;
+        padding: 5px;
+        height: 30px;
+    }
+
+    #menu-btn-container:hover {
+        background: #ebebec;
+        border: 1px solid transparent;
+        border-radius: 50px;
+    }
     #menu-btn {
-        width: 20px;
+        vertical-align: center;
+        cursor: pointer;
+        fill: #666666;
+    }
+
+    #menu-btn:hover {
+        fill: black;
     }
 
     main {
@@ -58,11 +95,16 @@
         height: 60vh;
     }
 
+    main > div {
+        margin: 10px;
+    }
+
     .logo-container {
+        margin-bottom: 10px;
     }
 
     .logo-container img {
-        width: 20vw;
+        width: 300px;
     }
 
     .search-container {
@@ -71,8 +113,9 @@
         align-items: center;
         border-radius: 50px;
         border: 1px solid gray;
-        height: 6vh;
-        width: 40vw;
+        height: 12%;
+        width: 50vw;
+        max-width: 500px;
     }
 
     .search-icon {
@@ -87,9 +130,8 @@
     }
 
     .search-input {
-        width: 85%;
-        height: 4vh;
-        padding: 10px;
+        width: 80%;
+        padding: 5px;
         border: 0;
         font-size: 1em;
         color: black;
@@ -97,8 +139,24 @@
 
     .btn-container button {
         padding: 10px;
-        margin: 10px;
+        margin: 15px;
+        cursor: pointer;
+
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #5F6368;
         
+    }
+
+    .btn-container button:hover {
+        color: black;
+        background-color: #F8F8F8;
+        border: 1px solid #86888b;
+        box-shadow: 2px;
+    }
+
+    .lang a {
+        color: #1a0dab;
     }
 
     footer {
@@ -108,13 +166,12 @@
         left: 0;
         position: fixed;
         width: 100%;
-        background-color: lightgray;
+        background-color: #f2f2f2;
         padding: 10px;
     }
 
     footer p, footer a {
-        
-        color: rgb(49, 49, 49);
+        color: #5F6368;
     }
     
     .google-footer {
@@ -124,7 +181,7 @@
         padding: 10px;
     }
     .left {
-        width: 30vw;
+        width: 40vw;
         display: flex;
         justify-content: flex-start;
     }
@@ -143,13 +200,52 @@
         margin: 0 auto;
     }
 
+    /*
     .attrib {
         text-align: center;
         width: 100%;
         border-top: 1px solid gray;
         padding: 5px;
     }
-    @media screen and (max-width: 767px) {
+    */
+
+    @media screen and (max-width: 801px) {
         /*mobile version*/
+        .topbar-container {
+            width: 50vh;
+        }
+
+        .search-container {
+            min-width: 400px;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #f2f2f2;
+            font: 14px;
+        }
+    
+        
+        .google-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+
+        .left {
+            padding: 10px;
+            width: 100%;
+            order: 2;
+            margin: 0 auto;
+        }
+    
+        .right {
+            padding: 10px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    
     }
 }
